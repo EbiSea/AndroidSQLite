@@ -1,9 +1,5 @@
 package info.androidhive.sqlite.database.model;
 
-/**
- * Created by ravi on 20/02/18.
- */
-
 public class Note {
     public static final String TABLE_NAME = "notes";
 
@@ -33,25 +29,12 @@ public class Note {
         this.timestamp = timestamp;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public String getNote() { return note; }
+    public void setNote(String note) { this.note = note; }
+    public String getTimestamp() { return timestamp; }
 
-    public String getNote() {
-        return note;
-    }
-
-    public void setNote(String note) {
-        this.note = note;
-    }
-
-    public String getTimestamp() {
-        return timestamp;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setId(int id) { this.id = id; }
 
     public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
